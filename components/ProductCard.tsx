@@ -25,14 +25,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           className="object-cover"
         />
       </div>
-      <div className="grid grid-cols-2 text-sm p-2">
+      <div className="text-sm p-2">
         <div>
           <div className="group-hover:underline truncate font-medium">
             {product.name}
           </div>
           <div className="truncate">{product.size.name}</div>
         </div>
-        <div className="ml-auto">{formatter.format(Number(product.price))}</div>
+        <div>{formatter.format(Number(product.price))}</div>
       </div>
     </div>
   );
