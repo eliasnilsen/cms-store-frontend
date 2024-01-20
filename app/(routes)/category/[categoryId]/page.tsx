@@ -31,6 +31,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
   const sizes = await getSizes();
   const colors = await getColors();
   const category = await getCategory(params.categoryId);
+
   return (
     <div className="space-y-2">
       <Billboard data={category.billboard} />
